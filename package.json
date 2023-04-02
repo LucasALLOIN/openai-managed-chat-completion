@@ -1,10 +1,16 @@
 {
   "name": "openai-managed-chat-completion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "license": "MIT",
   "type": "module",
   "description": "A simple library to manage a chat completion with OpenAI",
+  "homepage": "https://github.com/LucasALLOIN/openai-managed-chat-completion/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucasALLOIN/openai-managed-chat-completion.git"
+  },
+  "author": "Lucas ALLOIN <lucas.alloin915@gmail.com> (https://github.com/LucasALLOIN)",
+  "license": "UNLICENSED",
   "keywords": [
     "openai",
     "chat",
@@ -28,6 +34,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "deploy": "yarn build && npm publish",
     "dev": "nodemon --exec ts-node example/demo.ts"
   },
   "dependencies": {
