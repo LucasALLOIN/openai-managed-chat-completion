@@ -1,17 +1,34 @@
 {
-  "name": "my_ChatGPT",
+  "name": "openai-managed-chat-completion",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
+  "description": "A simple library to manage a chat completion with OpenAI",
+  "keywords": [
+    "openai",
+    "chat",
+    "completion",
+    "managed",
+    "library",
+    "gpt",
+    "stream",
+    "history",
+    "typescript"
+  ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/node": "^18.15.11",
     "nodemon": "^2.0.22",
+    "rollup": "^3.20.2",
+    "rollup-plugin-typescript2": "^0.34.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon --exec ts-node src/demo.ts"
+    "build": "rollup -c",
+    "dev": "nodemon --exec ts-node example/demo.ts"
   },
   "dependencies": {
     "dotenv": "^16.0.3",

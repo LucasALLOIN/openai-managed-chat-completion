@@ -3,7 +3,21 @@
 A TypeScript project that provides a fully managed class, with history (context from you previous prompt) is supported, for chatting with the OpenAI GPT model. It uses the [OpenAI API](https://beta.openai.com/) to communicate with the GPT model and provides two modes of interaction: one-time completions and streaming completions.
 There aslo is a CLI interface that allows you to chat with the GPT model in the command line in demo.ts.
 
-## Installation
+## Installation from package manager
+
+### Yarn
+
+```sh
+$ yarn add openai-managed-chat-completion
+```
+
+### NPM
+
+```sh
+$ npm install openai-managed-chat-completion
+```
+
+## Installation from repository
 
 1. Clone the repository:
 
