@@ -57,8 +57,15 @@ class GPTCompletion {
         if (response.data.choices.length === 0) {
             throw new Error("No completion found");
         }
-        const responseMessage = response.data.choices[0].message!.content!;
-        return responseMessage;
+
+        const responseMessage = response.data.choices[0].message!;
+        if (responseMessage.role === "system") {
+            throw new Error("OpenAI System Error: " + responseMessage.content);
+        }
+
+        this.chatLog = this.chatLog.concat([responseMessage]);
+
+        return responseMessage.content;
     }
 
     async getStreamCompletion(prompt: string): Promise<Readable> {
