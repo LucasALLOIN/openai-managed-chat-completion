@@ -1,6 +1,6 @@
 {
   "name": "openai-managed-chat-completion",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "type": "module",
   "description": "A simple library to manage a chat completion with OpenAI",
@@ -30,7 +30,8 @@
     "rollup": "^3.20.2",
     "rollup-plugin-typescript2": "^0.34.1",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "dotenv": "^16.0.3"
   },
   "scripts": {
     "build": "rollup -c",
@@ -38,8 +39,6 @@
     "dev": "nodemon --exec ts-node example/demo.ts"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "openai": "^3.2.1",
-    "readline-sync": "^1.4.10"
+    "openai": "^3.2.1"
   }
 }

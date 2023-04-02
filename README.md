@@ -111,6 +111,9 @@ stream.on("data", (chunk: Buffer) => {
 - `nodemon`: A tool for automatically restarting the server when changes are made.
 - `ts-node`: A tool that executes TypeScript files directly, without compilation.
 - `typescript`: A superset of JavaScript that adds typed variables and other features.
+- `rollup`: A module bundler for JavaScript.
+- `rollup-plugin-node-resolve`: A Rollup plugin that locates modules using the Node resolution algorithm.
+- `rollup-plugin-typescript2`: A Rollup plugin that uses the TypeScript compiler to transpile TypeScript files.
 
 ## Usage
 
