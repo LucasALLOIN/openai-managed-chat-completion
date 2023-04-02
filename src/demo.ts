@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-import GPTCompletion from "./gpt-completion";
+import GPTCompletion from "./GPTCompletion";
 import readline from 'readline';
 import openai from "./openai";
 
