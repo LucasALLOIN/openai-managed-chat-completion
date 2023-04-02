@@ -1,7 +1,7 @@
 {
   "name": "openai-managed-chat-completion",
-  "version": "1.0.2",
-  "main": "index.js",
+  "version": "1.0.3",
+  "main": "index.ts",
   "type": "module",
   "description": "A simple library to manage a chat completion with OpenAI",
   "homepage": "https://github.com/LucasALLOIN/openai-managed-chat-completion/blob/main/README.md",
